@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actiity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/dark"
+    tools:openDrawer="start">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <ImageView android:src="@drawable/login_image"
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Total Complaints"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textStyle="normal|bold"
+            android:id="@+id/totalCmp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="20dp"
+                android:text=" In Progress "
+                android:layout_height="70dp"
+                android:background="@drawable/round_corner"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="normal|bold"
+                android:id="@+id/progressComp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text=" Resolved "
+                android:layout_height="70dp"
+                android:background="@drawable/round_corner"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="normal|bold"
+                android:id="@+id/resolvedCmp" />
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Declined"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:typeface="serif"
+            android:textStyle="normal|bold"
+            android:id="@+id/changePwd" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/add"
+            android:id="@+id/addCmp"
+            android:layout_gravity="right" />
+    </LinearLayout>
+  <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/activity_main2_drawer"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main2"
+        android:id="@+id/nav_view">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

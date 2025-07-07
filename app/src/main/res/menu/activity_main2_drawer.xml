@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/app_name">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/profile_image"
+                android:title="My Profile" />
+            <item
+                android:id="@+id/nav_tips"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="Help" />
+        </menu>
+    </item>
+
+
+    <item android:title="Actions">
+        <menu>
+            <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share App" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@android:drawable/star_big_on"
+                android:title="Rate App" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="Exit App" />
+            <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:title="Signout" />
+        </menu>
+    </item>
+
+</menu>

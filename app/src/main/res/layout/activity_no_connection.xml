@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_no_connection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devolper.complaintfyp.noConnection"
+    >
+
+    <TextView
+         android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/textView"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Connection Found!"
+        android:id="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@android:color/holo_red_dark" />
+</RelativeLayout>

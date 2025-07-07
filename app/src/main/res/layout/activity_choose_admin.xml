@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devolper.complaintfyp.chooseAdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:id="@+id/space"
+                android:layout_height="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="\nLogin as Admin\n"
+                android:background="@drawable/rounded_corner"
+                android:id="@+id/btnAdminLogin" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:columnCount="2"
+                android:id="@+id/topLayout"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_columnWeight="1"
+                    android:text="\n\n\nLogin as Dean\n"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnDeanLogin" />
+                <Button
+                    android:layout_columnWeight="1"
+                    android:text="\n\n\nLogin as HOD\n"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnHODLogin" />
+
+
+                <Button
+                    android:layout_columnWeight="1"
+                    android:text="\n\nLogin as \nCordinator\n"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnCordinatorLogin" />
+
+                <Button
+                    android:layout_columnWeight="1"
+                    android:text="\n\n\nGym Admin\n"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnGymAdmin" />
+                <Button
+                    android:layout_columnWeight="1"
+                    android:text="\n\nSecurity\nAdmin\n"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnSecurityAdmin" />
+                <Button
+                    android:layout_columnWeight="1"
+                    android:text="\n\n\nCafe Admin\n"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnCafeAdmin" />
+                <Button
+                android:layout_columnWeight="2"
+                android:text="\n\nTransport\nAdmin\n"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="10dp"
+                android:id="@+id/btnTransportAdmin" />
+
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

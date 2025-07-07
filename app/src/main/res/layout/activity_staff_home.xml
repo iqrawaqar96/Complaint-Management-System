@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_staff_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devolper.complaintfyp.other_staff.staffHome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView android:src="@drawable/login_image"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:id="@+id/login_image"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Complaints"
+        android:layout_height="70dp"
+        android:background="@drawable/round_corner"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:id="@+id/totalCmp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="View All"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textStyle="normal|bold"
+            android:visibility="gone"
+            android:id="@+id/viewAll" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:layout_height="70dp"
+        android:background="@drawable/round_corner"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:id="@+id/btnLogout" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actiity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/dark"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INTRODUCTION"
+                android:padding="10dp"
+                android:id="@+id/title1"
+                android:textStyle="normal|bold"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="International Islamic University Islamabad Complaint Management System (IIUI CMS) is a University owned Mobile Application (available on both Android only) and is being used as a tool to promote students-centric participatory governance. "
+                android:padding="5dp"
+                android:layout_below="@id/title1"
+                android:id="@+id/details1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FEATURES"
+                android:padding="10dp"
+                android:id="@+id/title2"
+                android:layout_below="@id/details1"
+                android:textStyle="normal|bold"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="•	Students’ empowerment
+    \r\n•	Free registration on the Portal via App
+    \r\n•	Direct interaction and connectivity with the concerned office/officers
+    \r\n•	No reference required to put forward a case.
+    \r\n•	No physical mobility required.
+    \r\n•	Regular update and real time tracking regarding the status of complaints etc.
+    \r\n•	No timing bar on complaint lodging/case submission.
+    "
+                android:padding="10dp"
+                android:layout_below="@id/title2"
+                android:id="@+id/details2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OBJECTIVES "
+                android:padding="10dp"
+                android:id="@+id/title3"
+                android:layout_below="@id/details2"
+                android:textStyle="normal|bold"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The manual aims to ensure that complaints, guidance seeking queries and suggestions from registered members of the Portal are handled in a clearly defined and effective manner. Objectives of the manual are to;
+    \r\n• Enable the departments to respond and attempt to resolve complaints of the registered student in a timely and appropriate possible manner.
+    \r\n• Ensure complaints &amp; suggestions are timely forwarded to the concerned officer/office within the organization.
+    \r\n• Respond and keep the student well informed at all levels of the complaint Redressal process.
+    \r\n• Ensure complaints are resolved in the manner of a possible relief provided to the complainant.
+    \r\n• Provide focal persons with an understanding about complaints &amp; suggestions handling processes i.e. lodging, forwarding, retrieving, reopening, resolving, responding and closing.
+    \r\n• Identify how complaints &amp; suggestions are used as basis for evidence-based policy making.
+    \r\n• Establish review and summarization procedures, internal/external reporting procedures, and procedures for handling confidentiality issues.
+    \r\n• Enable organizations to integrate all existing complaint cells/systems with IIUI CMS
+    "
+                android:padding="10dp"
+                android:layout_below="@id/title3"
+                android:id="@+id/details3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOW TO USE IT "
+                android:padding="10dp"
+                android:id="@+id/title4"
+                android:layout_below="@id/details3"
+                android:textStyle="normal|bold"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="i.	Open the IIUI CMS
+    \r\nii.	Choose what you are either student or admin
+    \r\niii.	If you are a new student, then register yourself as a student.
+    \r\niv.	Give your details correct otherwise you will not be able to sign up as only students of iiui has the right to use the application.
+    \r\nv.	After registering you have to wait until your account is not approved by the admin.
+    \r\nvi.	Once your account is approved, then you are able to login to your account and make complaint.
+    "
+                android:padding="10dp"
+                android:layout_below="@id/title4"
+                android:id="@+id/details4"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/activity_main2_drawer"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main2"
+        android:id="@+id/nav_view">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

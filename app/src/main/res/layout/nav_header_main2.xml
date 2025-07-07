@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="1"
+        android:columnCount="3">
+
+        <ImageView
+            android:id="@+id/sliderUserImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@drawable/main" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:id="@+id/sliderUserName"
+                android:text="My Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/sliderUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="myemail@eample.com" />
+        </LinearLayout>
+    </GridLayout>
+
+
+
+
+</LinearLayout>

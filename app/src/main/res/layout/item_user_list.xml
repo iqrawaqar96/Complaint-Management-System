@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ECF5F1"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+            <TextView
+                android:layout_columnWeight="1.5"
+                android:text="F"
+                android:id="@+id/email"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textSize="45sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:typeface="serif"
+                android:fontFamily="monospace" />
+            <LinearLayout
+                android:layout_columnWeight="3"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="15dp"
+                    android:typeface="sans"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="true" />
+                <TextView
+                    android:id="@+id/reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Number"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="serif"
+                    android:textAllCaps="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_corner"
+                        android:id="@+id/approve"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Approve"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_corner"
+                        android:id="@+id/reject"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reject"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </GridLayout>
+    </RelativeLayout>
+</RelativeLayout>

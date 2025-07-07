@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_single_complain_staff_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.devolper.complaintfyp.other_staff.SingleComplainStaffView">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/category"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/detail"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/user"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:text="Attachments"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="pic"
+                    android:id="@+id/img"
+                    android:text="Picture"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/round_corner"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+
+                    android:onClick="play"
+                    android:id="@+id/play"
+                    android:text="play Video"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/round_corner"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="pic"
+                    android:id="@+id/resolve"
+                    android:text="Resolved"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/round_corner"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+
+                    android:onClick="play"
+                    android:id="@+id/dec"
+                    android:text="Declined"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/round_corner"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:layout_margin="10dp"
+                    android:id="@+id/remarks"
+                    android:hint="Add Remarks here"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_margin="10dp"
+                android:text="save remarks"
+                android:background="@drawable/round_corner"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/saveRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

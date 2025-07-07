@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devolper.complaintfyp.admin.AddAccount">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:rowCount="1"
+            android:columnCount="3"
+            android:id="@+id/gridLayout">
+            <Button
+                android:layout_columnWeight="1"
+                android:id="@+id/btDean"
+                android:text="Add Dean"
+                android:background="@android:drawable/editbox_background_normal"
+                android:textAllCaps="false" />
+            <Button
+                android:layout_columnWeight="1"
+                android:id="@+id/btnHod"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Add HOD"
+                android:textAllCaps="false" />
+            <Button
+                android:layout_columnWeight="1"
+                android:id="@+id/btnOthers"
+                android:background="@android:drawable/editbox_background_normal"
+                android:text="Others"
+                android:textAllCaps="false" />
+        </GridLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Choose Admin Type"
+                android:visibility="gone"
+                android:id="@+id/adminTypeLabel"
+                android:gravity="bottom"
+                android:textSize="12sp" />
+        <Spinner
+            android:id="@+id/input_list"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_corner"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </Spinner>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent">
+
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark"
+                android:textColor="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:hint="Full Name" />
+        </android.support.design.widget.TextInputLayout>
+        <!-- Name Label -->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent">
+            <EditText android:id="@+id/input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark"
+                android:textColor="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:hint="Username" />
+        </android.support.design.widget.TextInputLayout>
+        <!--  Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent">
+            <EditText android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/dark"
+                android:textColor="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColorHint="@color/dark"
+                android:textColor="@color/colorAccent"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Re-enter Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"></android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:text="Create Account"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
